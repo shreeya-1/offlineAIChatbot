@@ -1,0 +1,113 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+body {
+  margin: 0; /* Reset the default margin on the body element */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column; /* Align the items vertically */
+}
+
+.logo {
+  width: 150px; /* Adjust the width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between the logo and heading */
+}
+
+.chat-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.user {
+  background-color: #007bff;
+  color: white;
+  text-align: right;
+}
+
+.bot {
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Set button background color to blue */
+  color: white;
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+input[type="text"] {
+  height: 30px; /* Adjust the height as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px; /* Add padding for better appearance */
+}
+
+.center-heading {
+  text-align: center;
+  margin: 0;
+  padding: 0; /* Remove default padding */
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
